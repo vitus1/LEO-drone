@@ -15,3 +15,6 @@ Initial topic name: joydata (can also be referred to as "pi/joydata")
 
 Telegraf/DB username: telegraf <br />
 Telegraf/DB password: leo1
+
+Grafana username: admin <br />
+Grafana password: gruppe03
