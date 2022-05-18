@@ -175,7 +175,7 @@ void loop() {
    
 
     // Subscripe an MQTT message on topic esp32/dht/Joydata
-    uint16_t packetIdSub = mqttClient.subscribe(MQTT_PUB_JOY, 2);
+    uint16_t packetIdSub = mqttClient.subscribe(MQTT_PUB_JOY, 0);
     Serial.print("Subscribing at QoS 2, packetId: ");
     Serial.println(packetIdSub);
 
