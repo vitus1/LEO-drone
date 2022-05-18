@@ -147,8 +147,8 @@ void loop() {
     // Save the last time a new reading was published
     previousMillis = currentMillis;
         
-    uint16_t packetIdPub3 = mqttClient.publish(MQTT_PUB_PINX, 1, true, String(analogRead(34)).c_str());                            
-    Serial.printf("Publishing on topic %s at QoS 1, packetId %i: ", MQTT_PUB_PINX, packetIdPub3);
+    uint16_t packetIdPub3 = mqttClient.publish(MQTT_PUB_PINX, 0, true, String(analogRead(34)).c_str());                            
+    Serial.printf("Publishing on topic %s at QoS 0, packetId %i: ", MQTT_PUB_PINX, packetIdPub3);
     Serial.printf("Message: %.2f \n", pinX);
 
     Serial.println("pinX");
